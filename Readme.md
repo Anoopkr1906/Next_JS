@@ -23,3 +23,19 @@ It simpilfies the process of production-ready web applications.
 6. Optimization
 7. Dev and prod build system
 
+
+
+# Lecture 4 
+## React Server Components (RSC)
+* React server components is a new artitecture that was introduced by React and quickly adopted by Next.js
+* This architecture introduces a new approach to creating React components by dividing them into diff. types : a. Server Components , b. Client Components
+
+## Server Components
+* By default, Next.js treats all components as Server components.
+* These components can perform server-side tasks like reading files or fetching data directly from a database.
+* The trade-off is that they can't use React hooks or handle user interactions .
+
+## Client Components 
+* To create a client component, you'll need to add the "use client" diretive at the top of ur component file
+* While they can't perform server-side tasks like reading files , they can use hooks and handle user interactions
+* Client components are the traditional react components you're already familiar with from previous versions of React.  
