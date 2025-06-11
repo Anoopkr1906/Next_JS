@@ -1,9 +1,10 @@
-# Limitations of React Js
+# Lecture 1
+## Limitations of React Js
 * It's not feasible to create a fully-featured application ready for production .
 * React is library for building user interfaces .
 * You need to make decisions about other features such as routing , data fetching and more .
 
-# What is Next Js ?
+## What is Next Js ?
 * It uses React for building user interfaces .
 * Provides additional features that enables u to build production-ready applications .
 * These features include routing, optimised rendering , data fetching, bundling, compiling, and more .
@@ -12,8 +13,7 @@
 
 In short , Next.js is a React Framework for building web applications.
 
-## IMP 
-# Why Learn Next.js ?
+## Why Learn Next.js ?
 It simpilfies the process of production-ready web applications.
 1. Routing
 2. Api routes
