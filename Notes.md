@@ -63,3 +63,13 @@ When these conventions are followed, the file automatically becomes available as
 * This allows you to create more complex URL structures that can handle multiple dynamic segments.
 ## Catch all segments
 * eg. docs/feature1/concept1/example1
+
+## Lecture 10 
+* custom 404 page not found page
+* we can use this anywhere as a function by importing it .
+* suppose we in products section we dont want to display the review with reviewId > 1000 then we will show this page 
+* This page can be created by creating a file named not-found.tsx or not-found.js inside the app folder.
+* one folder can have their not-found.tsx file  
+
+* Not-found component do not accept props
+
