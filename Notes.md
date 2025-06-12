@@ -52,3 +52,12 @@ It simpilfies the process of production-ready web applications.
 * Each folder represents a segment of the URL path .
 
 When these conventions are followed, the file automatically becomes available as a route .
+
+
+# Lecture 7 & 8 
+## Dynamic routing 
+* for dynamic routing name folder inside square brackets eg. [productId] for products page.
+* eg proucts/1 , products/2 and so on routing will be done dynamically not statically 
+## Nested Dynamic routing
+* eg products/[productId]/reviews/[reviewId]
+* This allows you to create more complex URL structures that can handle multiple dynamic segments.
