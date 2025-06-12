@@ -74,8 +74,16 @@ When these conventions are followed, the file automatically becomes available as
 * Not-found component do not accept props
 
 
-## Lecture 11
+## Lecture 12
 Private Folders 
 * A way to tell Next.js, Hey this folder is just for internal stuff - dont include it in the routing system.
 * The folder and all its subfolders are excluded from the routing .
 * Add an underscore before the folder name to make it private.
+
+* Advantages of Private Folders (super useful for a bunch of things)
+1. Keeping your UI logic seperate from routing logic .
+2. Having a consistent way to organize internal files in your project
+3. Making it easier to group related files in ur code editor
+4. Avoiding potential naming conflicts with future Next.js file naming conventions
+
+* PRO TIP - use %5F in place of _(underscore) in the URL to access the private folder in the browser.
