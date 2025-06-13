@@ -123,3 +123,8 @@ Private Folders
 * When metadata exists in multiple places along a route, they merge together, with page metadata overriding layout metadata for matching properties.
 
 * Metadata will not work in pages that use the "use client" directive, as these pages are client components and do not support server-side metadata generation.
+
+# Lecture 18 
+## title metadata
+* The title field's primary purpose is to define document title .
+* It can either be a string or an object
