@@ -87,3 +87,9 @@ Private Folders
 4. Avoiding potential naming conflicts with future Next.js file naming conventions
 
 * PRO TIP - use %5F in place of _(underscore) in the URL to access the private folder in the browser.
+
+## Lecture 13
+* creating auth folder in which we will group routes such as login, register, and logout.
+* This is a good practice to keep your authentication-related routes organized and separate from other parts of your application.
+
+* we wrap the auth folder inside paranthesis () , this tells next.js to treat this folder as an organizational tool only excluding it from the URL path
