@@ -121,3 +121,5 @@ Private Folders
 * Page metadata applies only to that specific page.
 * Metadat follows a top-down order, starting from root level .
 * When metadata exists in multiple places along a route, they merge together, with page metadata overriding layout metadata for matching properties.
+
+* Metadata will not work in pages that use the "use client" directive, as these pages are client components and do not support server-side metadata generation.
