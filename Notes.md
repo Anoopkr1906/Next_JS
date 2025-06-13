@@ -106,3 +106,18 @@ Private Folders
 ## Nested Layouts
 * if u want to create a layout for a specific section of your app, you can create a layout file inside that section's folder.
 * eg for products reviews inside products folder we can create a layout.tsx file which will be used for all the reviews pages.
+
+# Lecture 17
+## Routing Metadata
+* The Metadata Api in Next.js is a powerful feature that lets us define metadata for our each page.
+* Meatadata ensures content looks great when its shared or indexed by search engines.
+* Two ways to handle metadata in layout.tsx or page.tsx files:
+    1. export a static metadata object
+    2. export a dynamic generateMetadata function
+
+## Configuring Metadata
+* Both layout.tsx and page.tsx files can export metadata.
+* Layout metadata applies to all pages within that layout.
+* Page metadata applies only to that specific page.
+* Metadat follows a top-down order, starting from root level .
+* When metadata exists in multiple places along a route, they merge together, with page metadata overriding layout metadata for matching properties.
