@@ -64,7 +64,7 @@ When these conventions are followed, the file automatically becomes available as
 ## Catch all segments
 * eg. docs/feature1/concept1/example1
 
-## Lecture 10 
+# Lecture 10 
 * custom 404 page not found page
 * we can use this anywhere as a function by importing it .
 * suppose we in products section we dont want to display the review with reviewId > 1000 then we will show this page 
@@ -74,7 +74,7 @@ When these conventions are followed, the file automatically becomes available as
 * Not-found component do not accept props
 
 
-## Lecture 12
+# Lecture 12
 Private Folders 
 * A way to tell Next.js, Hey this folder is just for internal stuff - dont include it in the routing system.
 * The folder and all its subfolders are excluded from the routing .
@@ -88,8 +88,16 @@ Private Folders
 
 * PRO TIP - use %5F in place of _(underscore) in the URL to access the private folder in the browser.
 
-## Lecture 13
+# Lecture 13
 * creating auth folder in which we will group routes such as login, register, and logout.
 * This is a good practice to keep your authentication-related routes organized and separate from other parts of your application.
 
 * we wrap the auth folder inside paranthesis () , this tells next.js to treat this folder as an organizational tool only excluding it from the URL path
+
+
+# Lecture 14
+## How to create Layouts
+* Default export a React component from a file named layout.tsx or layout.js inside the app folder.
+* That component takes a children prop , which Next.js will populate with your page content.
+
+* eg Made a header and footer in layout.tsx file in route-grous and will be visible even if u visit any routes 
