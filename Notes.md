@@ -101,3 +101,8 @@ Private Folders
 * That component takes a children prop , which Next.js will populate with your page content.
 
 * eg Made a header and footer in layout.tsx file in route-grous and will be visible even if u visit any routes 
+
+# Lecture 15
+## Nested Layouts
+* if u want to create a layout for a specific section of your app, you can create a layout file inside that section's folder.
+* eg for products reviews inside products folder we can create a layout.tsx file which will be used for all the reviews pages.
