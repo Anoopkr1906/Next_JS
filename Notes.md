@@ -136,3 +136,14 @@ For a given URL ,
 * params is a promise that resolves to an object containing the dynamic route parameters(like id).
 * searchParams is a promise that resolves to an object containing the query parameters in the URL( like filters and sorting ).
 * While page.tsx has access to both params and searchParams, layout.tsx only has access to params.
+
+# Lecture 23
+## Templates
+* templates are similar to layouts in that they are also UI shared between multiple pages in ur app 
+* Whenever a user navigates between routes sharing a template , you get a completely fresh start.
+    * a new template component instance is mounted
+    * DOM elements are recreated
+    * state is cleared
+    * effects are re-synchronized
+
+* Create a template by exporting a React component from a file named template.tsx or template.js .
