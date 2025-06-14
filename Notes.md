@@ -152,3 +152,28 @@ For a given URL ,
 ## loading.tsx
 * This file helps us create loading states that users see while waiting for a content to load in a specifc route segment.
 * The loading states appear instantly when navigating , letting users know that the application is responsive and actively loading content.
+
+
+# Lecture 25
+## Error Handling
+* Next.js provides a built-in error handling mechanism that allows you to create custom error pages for your application.
+* You can create a file named error.tsx or error.js inside the app folder to define a custom error page.
+* This error page will be displayed whenever an error occurs in your application, providing a better user experience than the default error page.
+* The error page can accept an error prop, which contains information about the error that occurred.
+* You can use this information to display a user-friendly error message or take other actions based on the error type.
+* The error page can also include a link to navigate back to the home page or any other route in your application.
+
+## error.tsx
+* It automatically wraps route segments and their nested children in a React Error Boundary.
+* You can create custom error UIs for specific segments using file-system hierarchy.
+* It isolates errors to affected segments while keeping the rest of ur app functional.
+* It enables you to attempt to recover from an error without requiring a full page reload.
+
+## Component Hierarchy
+* layout.tsx
+    * template.tsx
+        * error.tsx
+            * loading.tsx
+                * not-found.tsx
+                    * page.tsx
+
