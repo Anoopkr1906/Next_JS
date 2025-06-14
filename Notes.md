@@ -147,3 +147,8 @@ For a given URL ,
     * effects are re-synchronized
 
 * Create a template by exporting a React component from a file named template.tsx or template.js .
+
+# Lecture 24
+## loading.tsx
+* This file helps us create loading states that users see while waiting for a content to load in a specifc route segment.
+* The loading states appear instantly when navigating , letting users know that the application is responsive and actively loading content.
