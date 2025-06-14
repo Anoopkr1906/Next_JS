@@ -128,3 +128,11 @@ Private Folders
 ## title metadata
 * The title field's primary purpose is to define document title .
 * It can either be a string or an object
+
+
+# Lecture 21
+## Params and searchParams
+For a given URL ,
+* params is a promise that resolves to an object containing the dynamic route parameters(like id).
+* searchParams is a promise that resolves to an object containing the query parameters in the URL( like filters and sorting ).
+* While page.tsx has access to both params and searchParams, layout.tsx only has access to params.
