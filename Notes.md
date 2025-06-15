@@ -177,3 +177,12 @@ For a given URL ,
                 * not-found.tsx
                     * page.tsx
 
+
+
+# Lecture 27
+## Handling errors in nested routes
+* errors always bubble up to find the closest parent error boundary.
+* An error.tsx filehandles errors not just for its own folder, but for all the nested child segments below it too.
+* By strategically placing error.tsx files at different levels in your route folders , you can control exactly how detailed your error handling gets.
+
+* Where u put your error.tsx file makes a huge difference - it determines exactly which parts of ur UI get affected when things go wrong.
