@@ -186,3 +186,12 @@ For a given URL ,
 * By strategically placing error.tsx files at different levels in your route folders , you can control exactly how detailed your error handling gets.
 
 * Where u put your error.tsx file makes a huge difference - it determines exactly which parts of ur UI get affected when things go wrong.
+
+# Lecture 29
+## Handling Global errors
+* If an error boundary cant catch errors in the layout.tsx file from the same segment, what about errors in the root layout?
+* It doesn't have a parent segment- how do we handle those erros ?
+* Nest.js provides a special file calles global-error.tsx that goes in ur root app directory.
+* This is your last line of defense when something goes catastrophically wrong at the highest level of your app .
+    * Works only in production mode
+    * requires html and body tags to be rendered
