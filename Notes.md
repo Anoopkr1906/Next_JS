@@ -234,3 +234,10 @@ For a given URL ,
 - Next.js looks for a `default.tsx` file in each unmatched slot.
 - This file is critical as it serves a as a fallback to render content when the framework can't retrieve a slot's active state from the current URL.
 * Without the file, you will get a 404 error
+
+
+# Lecture 32
+## Conditional Routes
+* Imagine you want to show different content based on whether a user is logged in or not.
+* You might want to display a dashboard for authenticated users but show a login page for those who aren't.
+* Conditional routes allow us to achieve this while  maintaining completely seperate code on the same URL .
