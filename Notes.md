@@ -241,3 +241,15 @@ For a given URL ,
 * Imagine you want to show different content based on whether a user is logged in or not.
 * You might want to display a dashboard for authenticated users but show a login page for those who aren't.
 * Conditional routes allow us to achieve this while  maintaining completely seperate code on the same URL .
+
+
+# Lecture 33
+## Intercepting Routes
+* Intercepting routes is an advanced routing mechanism that allows u to load a route from another part of your application within the current layout.
+* It's particularly useful when u want to display new content while keeping ur user in the same context.  
+
+## Intercepting Route conventions 
+* (.) to match segments on the same level.
+* (..) to match segments one level above.
+* (..)(..) to match segments two level above.
+* (...) to match segments from the root app directory.
