@@ -226,3 +226,11 @@ For a given URL ,
 * Each slot can essentially function as a mini-application, complete with its own navigation and state management .
 * Users can interact with each section seperately , applying filters , sorting data , or navigation through pages without affecting other parts.
 
+# Lecture 31
+## Unmatched routes
+* Navigation from the UI
+- When navigating from the UI(like clicking a link), Next.js keeps showing whatever was in the unmatched slots before.
+* Page reload
+- Next.js looks for a `default.tsx` file in each unmatched slot.
+- This file is critical as it serves a as a fallback to render content when the framework can't retrieve a slot's active state from the current URL.
+* Without the file, you will get a 404 error
