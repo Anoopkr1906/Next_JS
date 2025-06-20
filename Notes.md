@@ -253,3 +253,19 @@ For a given URL ,
 * (..) to match segments one level above.
 * (..)(..) to match segments two level above.
 * (...) to match segments from the root app directory.
+
+
+# Lecture 42
+## Headers in route handlers
+* HTTP headers represent metadata about the associated APi request or response.
+
+## Request Headers
+* These are sent by client, such as a web browser. They contain essential information about the request, which helps the server undestand and process it correctly.
+* 'User-Agent' which identifies the browser and operating system to the server.
+* 'Accept' which indicates the content types like text, video or image formats that the client can process.
+* 'Authorization' which is used to send credentials for authentication purposes.
+
+## Response Headers
+* These are sent back from the server to the client. They provide information about the server and the data being sent in response.
+* 'Content-Type' which indicates the type of data being sent, such as JSON or HTML.
+* 
