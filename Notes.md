@@ -279,4 +279,16 @@ For a given URL ,
     - managing sessions(like user logins and shopping carts).
     - handling personalization (such as user preferences).
     - tracking (like recording and analyzing user behaviour).
-    
+
+
+# Lecture 45
+## Caching in route handlers
+* Route handlers are not cached by default but you can opt into catching when using GET method.
+* Caching only works for GET requests.
+* if u are using POST, PUT, DELETE, or PATCH methods, caching will not be applied.
+* if u are using dynamic functions like headers(), cookies(), or response, caching will not be applied.
+
+# Lecture 46
+## Middleware
+* Middleware in Next.js is a powerful feature that lets you intercept and control the flow of requests and responses throughout ur application .
+* It does this at a global level, significantly enhancing features like redirects, URL rewrites, and authentication , headers , cookies and more.
