@@ -292,3 +292,8 @@ For a given URL ,
 ## Middleware
 * Middleware in Next.js is a powerful feature that lets you intercept and control the flow of requests and responses throughout ur application .
 * It does this at a global level, significantly enhancing features like redirects, URL rewrites, and authentication , headers , cookies and more.
+
+* Middleware lets u specify paths where it should be active
+    - custom matcher config
+    - conditional statements
+    
