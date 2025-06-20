@@ -268,4 +268,15 @@ For a given URL ,
 ## Response Headers
 * These are sent back from the server to the client. They provide information about the server and the data being sent in response.
 * 'Content-Type' which indicates the type of data being sent, such as JSON or HTML.
-* 
+
+
+# Lecture 43
+## Cookies in route handlers
+* cookies are small pieces of data that a server sends to a user's web browser.
+* The browser can store the cookies and send them back to the same server with future requests .
+
+* Cookies serve three main purposes:
+    - managing sessions(like user logins and shopping carts).
+    - handling personalization (such as user preferences).
+    - tracking (like recording and analyzing user behaviour).
+    
