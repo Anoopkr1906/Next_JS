@@ -296,4 +296,10 @@ For a given URL ,
 * Middleware lets u specify paths where it should be active
     - custom matcher config
     - conditional statements
-    
+
+
+# Lecture 47
+## Rendering 
+* It is the process of transforming the component code u write into user interfaces that users can see and interact with .
+* In Next.js,the tricky part to building a performant application is figuring out when and where this transformation should happen.
+    - CSR , SSR and RSCs ?
