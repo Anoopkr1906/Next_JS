@@ -297,9 +297,28 @@ For a given URL ,
     - custom matcher config
     - conditional statements
 
-
 # Lecture 47
 ## Rendering 
 * It is the process of transforming the component code u write into user interfaces that users can see and interact with .
 * In Next.js,the tricky part to building a performant application is figuring out when and where this transformation should happen.
-    - CSR , SSR and RSCs ?
+    - CSR, SSR and RSCs ?
+
+# Lecture 48
+## Client-side rendering (CSR)
+* The whole approach where your browser (the client) transforms React components into what you see on screen - that's what we call client-side rendering (CSR).
+* CSR was super-popular for single-page-applications(SPAs) , and everyone was using it .
+* It wasn't long before when developers began noticing some inherent drawbacks to this approach.
+
+    ## Drawbacks of CSR
+
+    ### SEO
+    * When search engines crawl your site, they're mainly looking at HTML content, but with CSR, ur initial HTML is basically just an empty div- not great for search engines trying to figure out what ur page is about.
+    * When u have a lot of nested components making API calls, the meaningful content might load too slowly for search engines to even catch it.
+
+    ### Performance
+    * Your browser (the client) has to do everything: fetch data, build the UI, make everything interactive... that's a lot of work! 
+
+    * Users often end up staring at a blank screen or a loading spinner while all this happens.
+    * Everytime u add a new feature to ur app , that js bundle gets bigger, making users wait even longer
+    * This is especially frustrating for people with slower internet connections.
+       
