@@ -321,4 +321,60 @@ For a given URL ,
     * Users often end up staring at a blank screen or a loading spinner while all this happens.
     * Everytime u add a new feature to ur app , that js bundle gets bigger, making users wait even longer
     * This is especially frustrating for people with slower internet connections.
-       
+
+
+# Lecture 49
+## Server-side solutions
+* Search engines can now easily index the server-rendered content, solving our SEO problem.
+* Users see actual HTML content right away instead of staring at a blank screen or loading spinner.
+* This has it's own complexities.
+
+## Hydration
+* DUring hydration, React takes control in the browser and reconstructs ths component tree in memory, using the server-rendered HTML as a blueprint.
+
+* It carefully maps out where all the interactive elements should go, then hooks up the javascript logic.
+* This involves initializing application state, adding click and mouseover handlers, and setting up all the dynamic features needed for a full interactive user experience 
+
+## Server-side solutions 
+1. Static Site Generation (SSG)
+2. Server-side Rendering (SSR)
+
+* SSG happens during build time when u deploy ur application to the server. This results in pages that are already rendered and ready to serve. It's perfect for content that stays relatively stable, like blogs or documentation sites.
+* SSR, on the other hand, renders pages on-demand when users request them. It's ideal for personalized content like social media feeds where the HTML changes based on who's logged in.
+* Server-SIde rendering(SSR) was a significant improvement over CSR, providing faster initial page loads and better SEO, it came with its own set of challenges.
+
+## Drawbacks of SSR - all or nothing waterfall
+* U have to fetch everything befor u can show anything.
+* U have to load everything befor u can hydrate anything.
+* U have to hydrate everything befor u can interact with anything.
+
+# Lecture 50
+## Suspense SSR architecture
+* Use the <Suspense> component to unlock two major SSR features:
+    1. HTML streaming on the server
+    2. Selective hydration on the client
+
+### HTML streaming on the server
+- HTML streaming solves our first problem:
+    * U don't have to fetch everything before u can show anything.
+    * If a particular section is slow and could potentially delay the initial HTML, no problem!
+    * It can be seamlessly integrated into the stream later when it's ready.
+
+- The other hurdle
+    * Even with faster HTML delivery, we cant start hydrating until we've loaded all the JavaScript for the main section
+    * If that's a big chunk of code, we're still keeping users waiting from being able to interact with the page.
+
+### Code splitting
+* It lets u tell ur bundler, "These parts of the code aren't urgent - split them into seperate scripts".
+* Using `React.lazy` for code splitting seperates ur main section's code from the core JS bundle .
+* The browser can download React and most of ur app's code independently, without getting stuck waiting for that main section's code
+
+### Selective hydration on the client 
+* By wrapping ur main section in a `<Suspense>` component, u are not just enabling streaming but also telling REact its okay to hydarate other parts of tha page before everything is ready.
+* This is what we call `selective hydration` .
+* It allows for the hydration of parts of the page as they become available, even before the rest of the HTML and the JS code are fuly downloaded.
+
+
+- It also solves or third problem 
+* The neccesity to "hydrate everything to interact with anything".
+* react starts hydrating as soon as it can , which means users can interact with things like the header and side navigation without waiting for main content. 
